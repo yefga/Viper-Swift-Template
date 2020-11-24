@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Definitions</key>
+	<dict/>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>main.h</key>
+		<dict>
+			<key>Path</key>
+			<string>main.h</string>
+			<key>Group</key>
+			<array>
+				<string>parent</string>
+				<string>child</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>main.h</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Module Name</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Template Author</key>
+			<string>@yefga</string>
+			<key>Group</key>
+			<array>
+				<string>parent</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
