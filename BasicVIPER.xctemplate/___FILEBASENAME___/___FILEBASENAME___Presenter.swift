@@ -38,7 +38,7 @@ import Foundation
 
 class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ViewToPresenterProtocol {
     
-    var view: ___VARIABLE_productName___PresenterToViewProtocol?
+    weak var view: ___VARIABLE_productName___PresenterToViewProtocol?
     
     var interactor: ___VARIABLE_productName___PresenterToInteractorProtocol?
     
