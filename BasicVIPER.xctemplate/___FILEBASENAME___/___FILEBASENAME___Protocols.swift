@@ -36,38 +36,47 @@
 
 import Foundation
 
-protocol ___VARIABLE_productName___ViewToPresenterProtocol: class {
+//MARK: Presenter
+protocol ___VARIABLE_productName___ViewToPresenterProtocol: AnyObject {
+
     var view: ___VARIABLE_productName___PresenterToViewProtocol?{ get set }
     var interactor: ___VARIABLE_productName___PresenterToInteractorProtocol? {get set}
     var router: ___VARIABLE_productName___PresenterToRouterProtocol? {get set}
 
-}
-
-//MARK: Presenter -
-protocol ___VARIABLE_productName___PresenterToViewProtocol: class {
+    /// Add here your methods to communicate between VIEW -> PRESENTER
     
-    func noticeShowLoading()
-   
 }
 
-//MARK: Interactor -
-protocol ___VARIABLE_productName___PresenterToInteractorProtocol: class {
+//MARK: View
+protocol ___VARIABLE_productName___PresenterToViewProtocol: AnyObject {
+    
+    /// Add here your methods to communicate between PRESENTER -> VIEW
+     
+}
+
+//MARK: Interactor - Input
+protocol ___VARIABLE_productName___PresenterToInteractorProtocol: AnyObject {
+    
+    /// Add here your methods to communicate between PRESENTER -> INTERACTOR
     
     var presenter: ___VARIABLE_productName___InteractorToPresenterProtocol?  { get set }
     func fetch___VARIABLE_productName___(result: String)
    
 }
 
-//MARK: View -
-protocol ___VARIABLE_productName___InteractorToPresenterProtocol: class {
-    
+//MARK: Interactor - Output
+protocol ___VARIABLE_productName___InteractorToPresenterProtocol: AnyObject {
+
+    /// Add here your methods to communicate between INTERACTOR -> PRESENTER    
     func noticeShowLoading()
   
 }
 
-//MARK: Router -
-protocol ___VARIABLE_productName___PresenterToRouterProtocol: class {
+//MARK: Router
+protocol ___VARIABLE_productName___PresenterToRouterProtocol: AnyObject {
+    
+    /// Add here your methods to communicate between PRESENTER -> ROUTER (WIREFRAME)
+    
     func createModule()-> ___VARIABLE_productName___ViewController
     func goTo(viewController: ___VARIABLE_productName___ViewController)
-  
 }
