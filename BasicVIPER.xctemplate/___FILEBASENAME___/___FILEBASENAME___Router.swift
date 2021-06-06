@@ -34,15 +34,11 @@
 ///  Running on macOS ___RUNNINGMACOSVERSION___
 ///
 
-import Foundation
+import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___PresenterToRouterProtocol {
 
-    public static let shared = ___FILEBASENAMEASIDENTIFIER___()
-    
-    func initialize() -> ___VARIABLE_productName___ViewController {
-        return createModule()
-    }
+    static let shared = ___FILEBASENAMEASIDENTIFIER___()
     
     func createModule() -> ___VARIABLE_productName___ViewController {
         
