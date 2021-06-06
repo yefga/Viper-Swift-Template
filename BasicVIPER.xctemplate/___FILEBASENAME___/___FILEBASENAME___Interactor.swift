@@ -38,7 +38,7 @@ import Foundation
 
 class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___PresenterToInteractorProtocol {
     
-    var presenter: ___VARIABLE_productName___InteractorToPresenterProtocol?
+    weak var presenter: ___VARIABLE_productName___InteractorToPresenterProtocol?
     
     func fetch___VARIABLE_productName___(result: String) {
         
