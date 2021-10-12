@@ -6,7 +6,7 @@ Open Terminal
     
 Then
     
-    mv BasicVIPERTemplate/VIPER_Swift.xctemplate ~/Library/Developer/Xcode/Templates
+    mv VIPER_Swift/VIPER_Swift.xctemplate ~/Library/Developer/Xcode/Templates
 
 
 
