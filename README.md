@@ -2,11 +2,11 @@
 
 Open Terminal
     
-    git clone https://github.com/yefga/BasicVIPERTemplate.git
+    git clone https://github.com/yefga/VIPER_Swift.git
     
 Then
     
-    mv BasicVIPERTemplate/BasicVIPER.xctemplate ~/Library/Developer/Xcode/Templates
+    mv BasicVIPERTemplate/VIPER_Swift.xctemplate ~/Library/Developer/Xcode/Templates
 
 
 
