@@ -34,31 +34,15 @@
 ///  Running on macOS ___RUNNINGMACOSVERSION___
 ///
 
-import UIKit
+import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___PresenterToRouterProtocol {
-
-    static let shared = ___FILEBASENAMEASIDENTIFIER___()
+class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___PresenterToInteractorProtocol {
     
-    func createModule() -> ___VARIABLE_productName___ViewController {
+    weak var presenter: ___VARIABLE_productName___InteractorToPresenterProtocol?
+    
+    /// Place for Business Logic (ex: Asking Request and get Response from API)
+    func fetch___VARIABLE_productName___(result: String) {
         
-        let view = ___VARIABLE_productName___ViewController()
-        
-        let presenter: ___VARIABLE_productName___ViewToPresenterProtocol & ___VARIABLE_productName___InteractorToPresenterProtocol = ___VARIABLE_productName___Presenter()
-        let interactor: ___VARIABLE_productName___PresenterToInteractorProtocol = ___VARIABLE_productName___Interactor()
-        let router: ___VARIABLE_productName___PresenterToRouterProtocol = ___FILEBASENAMEASIDENTIFIER___()
-        
-        
-        view.presenter = presenter
-        presenter.view = view
-        presenter.router = router
-        presenter.interactor = interactor
-        interactor.presenter = presenter
-        
-        return view
     }
     
-    func goTo(viewController: ___VARIABLE_productName___ViewController) {
-        
-    }
 }

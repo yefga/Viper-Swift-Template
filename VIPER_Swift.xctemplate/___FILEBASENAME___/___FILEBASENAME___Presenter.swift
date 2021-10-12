@@ -44,16 +44,8 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ViewToPresenterP
     
     var router: ___VARIABLE_productName___PresenterToRouterProtocol?
     
-//     deinit {
-//         self.interactor = nil
-//     }
-    
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___InteractorToPresenterProtocol {
-  
-    func noticeShowLoading() {
-        
-    }
     
 }

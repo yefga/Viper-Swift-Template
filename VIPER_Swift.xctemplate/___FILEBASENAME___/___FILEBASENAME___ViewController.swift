@@ -40,29 +40,15 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     var presenter: ___VARIABLE_productName___ViewToPresenterProtocol?
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder _: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+
     }
-    
-    func setupUI() {
-        
-    }
-   
+       
 }
 
 
 extension ___FILEBASENAMEASIDENTIFIER___:  ___VARIABLE_productName___PresenterToViewProtocol {
  
-    func noticeShowLoading() {
-        
-    }
+    
 }
